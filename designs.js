@@ -1,7 +1,8 @@
 //function that clears the prvious table on clicking submit.
 function removeTable(){
 	let table=$('tr');
-		table.remove();}
+		table.remove();
+}
 //to create the table according to the input height and width.
 function makeGrid(){
 //call on removeTable() to clear the previous table.
@@ -27,7 +28,7 @@ $('td').click( function (event){
 }
 
 //event listeners to create table on submit(class;create).
-$('.create').click(function (k)
-	{k.preventDefault();
+$('.create').click(function (k){
+	k.preventDefault();
    	makeGrid();
 });
